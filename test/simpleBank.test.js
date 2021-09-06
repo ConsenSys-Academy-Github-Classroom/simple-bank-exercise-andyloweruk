@@ -11,7 +11,7 @@ contract("SimpleBank", function (accounts) {
 
   it("ready to be solved!", async() => {
     const eth100 = 100e18;
-    assert.equal(await web3.eth.getBalance(alice), /*eth100.toString()*/await web3.eth.getBalance(alice));
+    assert.equal(await web3.eth.getBalance(alice), eth100.toString());
   });
 
   it("is owned by owner", async () => {
